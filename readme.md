@@ -1,13 +1,13 @@
-# Actividad S16CP1A1
+# Actividad 31 - Postgresql
 
-#### En esta actividad trabajaremos con las diferentes queries desde el terminal de postgres. 
+#### En esta actividad trabajaremos con las diferentes queries desde el terminal de postgres.
 #### Para desarrollar esta actividad, tendrán que anotar cada una de las queries que utilizaron en un archivo **txt** y subir este archivo a la plataforma.
 #### Deben también ingresar, al final de este archivo, el nombre de los integrantes del grupo que participaron en el desarrollo de esta actividad.
 
 
-## Actividad
+## Ejercicio 1
 
-#### Crear db en base a los requerimientos enviados por el cliente.
+#### Crear base de datos en base a los requerimientos enviados por el cliente.
 
 1. Crear una base de datos llamada **call_list**
 2. En la base de datos recien creada, crear la tabla **users** con los campos id (clave primaria), first_name, email.
@@ -25,7 +25,7 @@
 
 
 
-	>#### El cliente solicitó nuevos cambios.
+	>#### Nuevos cambios solicitados por cliente.
 	>
 	>"Necesito agregar a la base una tabla de auditoría que registre el motivo del borrado de una llamada y el usuario que lo efectuo."
 
