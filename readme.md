@@ -1,4 +1,4 @@
-# Actividad 31 - Postgresql
+# Actividad 29 - Postgresql
 
 #### En esta actividad trabajaremos con las diferentes queries desde el terminal de postgres.
 #### Para desarrollar esta actividad, tendrán que anotar cada una de las queries que utilizaron en un archivo **txt** y subir este archivo a la plataforma.
