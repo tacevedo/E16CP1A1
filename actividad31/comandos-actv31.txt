@@ -1,0 +1,64 @@
+postgres=# create database call_list
+postgres-# ;
+CREATE DATABASE
+
+postgres=# GRANT ALL PRIVILEGES ON DATABASE "call_list" to tam;
+GRANT
+
+psql -d call_list
+
+
+create table users(id serial, first_name varchar, email varchar, primary key(id));
+
+insert into users (first_name, email) values ('Carlos', 'carlos@gm.com');
+
+insert into users (first_name, email) values ('Laura', 'laura@gm.com');
+
+
+create table calls(id serial, phone varchar, date varchar, user_id integer, primary key(id), foreign key (user_id) references users(id));
+
+alter table users add column last_name varchar;
+
+update users set last_name = 'condell' where first_name = 'Carlos';
+UPDATE 1
+
+update users set last_name = 'pradera' where first_name = 'Laura';
+UPDATE 1
+
+insert into calls (phone, date, user_id) values ('9077', '9-03-18', 2);
+
+insert into calls (phone, date, user_id) values ('965441441', '9-03-18', 2);
+
+insert into calls (phone, date, user_id) values ('96fff1441', '9-03-18', 2);
+
+insert into calls (phone, date, user_id) values ('96561511', '9-03-18', 2);
+
+insert into calls (phone, date, user_id) values ('8566661', '9-03-18', 2);
+
+insert into calls (phone, date, user_id) values ('8566661', '9-03-17', 2);
+
+
+insert into calls (phone, date, user_id) values ('16511', '1-2-18', (select id from users where first_name = 'Carlos'));
+
+insert into calls (phone, date, user_id) values 
+('16511', '1-2-18', (select id from users where first_name = 'Carlos')),
+('67889656', '2-2-18', (select id from users where first_name = 'Carlos')),
+('3423424', '3-2-18', (select id from users where first_name = 'Carlos')),
+('546789', '4-2-18', (select id from users where first_name = 'Carlos'));
+
+
+insert into users (first_name, last_name, email) values ('tam', 'acevedo', 'tam@gm.com');
+
+select count(*) as cant, u.first_name from users as u, calls as c group by u.id;
+
+select count(*) as cant, u.first_name from calls c join users u on(c.user_id = u.id) group by u.id;
+
+
+select * from calls c, users u where u.first_name = 'Carlos' order by date ASC;
+
+
+
+
+
+
+

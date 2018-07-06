@@ -30,3 +30,6 @@
 	>"Necesito agregar a la base una tabla de auditoría que registre el motivo del borrado de una llamada y el usuario que lo efectuó."
 
 14. A partir de la base anterior, agregar este requerimiento y modelar la base de datos (agregar print de pantalla [utilizar <a href="https://www.draw.io/">https://www.draw.io/</a>]).
+
+
+## Tamara Acevedo
